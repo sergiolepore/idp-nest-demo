@@ -6,9 +6,9 @@ import {
   Patch,
   Param,
   Delete,
-  Req,
 } from '@nestjs/common';
-import { RequestWithUser } from '../users/requestwithuser.interface';
+import { AuthUser } from '../users/authuser.decorator';
+import { User } from '../users/user.entity';
 import { DevelopersService } from './developers.service';
 import { CreateDeveloperDto } from './dto/create-developer.dto';
 import { UpdateDeveloperDto } from './dto/update-developer.dto';
@@ -20,9 +20,9 @@ export class DevelopersController {
   @Post()
   create(
     @Body() createDeveloperDto: CreateDeveloperDto,
-    @Req() request: RequestWithUser,
+    @AuthUser() user: User,
   ) {
-    console.log('User from request:', request.user);
+    console.log('User from request:', user);
     return this.developersService.create(createDeveloperDto);
   }
 
