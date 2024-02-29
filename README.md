@@ -1,34 +1,11 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) demo app - Engineering Meeting (02/29/2024).
 
 ## Installation
 
 ```bash
+$ yarn global add @nestjs/cli
 $ yarn install
 ```
 
@@ -58,16 +35,75 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## Demo Layers
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Basic App setup (YOU ARE HERE)
 
-## Stay in touch
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```bash
+$ git checkout master
+```
 
-## License
+### 1. Adding a "Test" controller
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/1-test-controller
 
-Nest is [MIT licensed](LICENSE).
+```bash
+$ git checkout 1-test-controller
+```
+
+### 2. Adding a "Developers" module with CRUD
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/2-developers-module
+
+```bash
+$ git checkout 2-developers-module
+```
+
+### 3. Adding middlewares (simple CORS + auth with Bearer token)
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/3-middlewares
+
+```bash
+$ git checkout 3-middlewares
+```
+
+### 4. Creating an "AuthUser" decorator
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/4-user-decorator
+
+```bash
+$ git checkout 4-user-decorator
+```
+
+### 5. Adding an "AuthGuard" to secure controllers with login
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/5-auth-guard
+
+```bash
+$ git checkout 5-auth-guard
+```
+
+### 6. Adding role-based authorization to routes
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/6-roles
+
+```bash
+$ git checkout 6-roles
+```
+
+### 7. Support for OpenAPI/Swagger docs
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/7-swagger
+
+```bash
+$ git checkout 7-swagger
+```
+
+### 8. Simple Microservices
+
+👉 https://github.com/sergiolepore/idp-nest-demo/tree/8-microservices
+
+```bash
+$ git checkout 8-microservices
+```
