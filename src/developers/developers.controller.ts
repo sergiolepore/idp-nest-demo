@@ -6,7 +6,9 @@ import {
   Patch,
   Param,
   Delete,
+  Req,
 } from '@nestjs/common';
+import { RequestWithUser } from '../users/requestwithuser.interface';
 import { DevelopersService } from './developers.service';
 import { CreateDeveloperDto } from './dto/create-developer.dto';
 import { UpdateDeveloperDto } from './dto/update-developer.dto';
@@ -16,7 +18,11 @@ export class DevelopersController {
   constructor(private readonly developersService: DevelopersService) {}
 
   @Post()
-  create(@Body() createDeveloperDto: CreateDeveloperDto) {
+  create(
+    @Body() createDeveloperDto: CreateDeveloperDto,
+    @Req() request: RequestWithUser,
+  ) {
+    console.log('User from request:', request.user);
     return this.developersService.create(createDeveloperDto);
   }
 
