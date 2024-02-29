@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -52,7 +52,7 @@ $ git checkout master
 $ git checkout 1-test-controller
 ```
 
-### 2. Adding a "Developers" module with CRUD
+### 2. Adding a "Developers" module with CRUD (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/2-developers-module
 
