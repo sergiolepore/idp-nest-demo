@@ -12,12 +12,13 @@ import { AuthUser } from '../users/authuser.decorator';
 import { AuthGuard } from '../users/auth.guard';
 import { User } from '../users/user.entity';
 import { Roles } from '../users/roles.decorator';
+import { RolesGuard } from '../users/roles.guard';
 import { DevelopersService } from './developers.service';
 import { CreateDeveloperDto } from './dto/create-developer.dto';
 import { UpdateDeveloperDto } from './dto/update-developer.dto';
 
 @Controller('developers')
-@UseGuards(AuthGuard)
+@UseGuards(AuthGuard, RolesGuard)
 export class DevelopersController {
   constructor(private readonly developersService: DevelopersService) {}
 
@@ -56,5 +57,11 @@ export class DevelopersController {
   @Roles(['admin'])
   remove(@Param('id') id: string) {
     return this.developersService.remove(+id);
+  }
+
+  @Delete()
+  @Roles(['superadmin'])
+  removeAll() {
+    return this.developersService.removeAll();
   }
 }

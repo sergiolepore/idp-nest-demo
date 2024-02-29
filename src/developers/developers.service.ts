@@ -50,4 +50,8 @@ export class DevelopersService {
       this.developersDB.splice(index, 1);
     }
   }
+
+  removeAll() {
+    this.developersDB.splice(0, this.developersDB.length);
+  }
 }
