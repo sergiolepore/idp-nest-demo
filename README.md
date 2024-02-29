@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -92,7 +92,7 @@ $ git checkout 5-auth-guard
 $ git checkout 6-roles
 ```
 
-### 7. Support for OpenAPI/Swagger docs
+### 7. Support for OpenAPI/Swagger docs (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/7-swagger
 
