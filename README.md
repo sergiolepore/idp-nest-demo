@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -60,7 +60,7 @@ $ git checkout 1-test-controller
 $ git checkout 2-developers-module
 ```
 
-### 3. Adding middlewares (simple CORS + auth with Bearer token)
+### 3. Adding middlewares (simple CORS + auth with Bearer token) (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/3-middlewares
 
