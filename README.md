@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -45,7 +45,7 @@ $ yarn run test:cov
 $ git checkout master
 ```
 
-### 1. Adding a "Test" controller
+### 1. Adding a "Test" controller (YOU ARE HERE)
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/1-test-controller
 
 ```bash
