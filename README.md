@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -76,7 +76,7 @@ $ git checkout 3-middlewares
 $ git checkout 4-user-decorator
 ```
 
-### 5. Adding an "AuthGuard" to secure controllers with login
+### 5. Adding an "AuthGuard" to secure controllers with login (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/5-auth-guard
 
