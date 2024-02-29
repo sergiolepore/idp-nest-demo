@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -100,7 +100,7 @@ $ git checkout 6-roles
 $ git checkout 7-swagger
 ```
 
-### 8. Simple Microservices
+### 8. Simple Microservices (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/8-microservices
 
