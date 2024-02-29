@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -68,7 +68,7 @@ $ git checkout 2-developers-module
 $ git checkout 3-middlewares
 ```
 
-### 4. Creating an "AuthUser" decorator
+### 4. Creating an "AuthUser" decorator (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/4-user-decorator
 
