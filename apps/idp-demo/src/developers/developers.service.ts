@@ -1,4 +1,5 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
+import { ClientProxy } from '@nestjs/microservices';
 import { CreateDeveloperDto } from './dto/create-developer.dto';
 import { UpdateDeveloperDto } from './dto/update-developer.dto';
 import { Developer } from './entities/developer.entity';
@@ -6,6 +7,8 @@ import { Developer } from './entities/developer.entity';
 @Injectable()
 export class DevelopersService {
   private readonly developersDB: Developer[] = [];
+
+  constructor(@Inject('MAIL_SERVICE') private mailService: ClientProxy) {}
 
   create(createDeveloperDto: CreateDeveloperDto): Developer {
     const newDeveloper = new Developer(
@@ -15,6 +18,8 @@ export class DevelopersService {
     );
 
     this.developersDB.push(newDeveloper);
+
+    this.mailService.emit('welcome_email', newDeveloper.email);
 
     return newDeveloper;
   }
