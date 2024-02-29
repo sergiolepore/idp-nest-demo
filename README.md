@@ -37,7 +37,7 @@ $ yarn run test:cov
 
 ## Demo Layers
 
-### Basic App setup (YOU ARE HERE)
+### Basic App setup
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/master
 
@@ -84,7 +84,7 @@ $ git checkout 4-user-decorator
 $ git checkout 5-auth-guard
 ```
 
-### 6. Adding role-based authorization to routes
+### 6. Adding role-based authorization to routes (YOU ARE HERE)
 
 👉 https://github.com/sergiolepore/idp-nest-demo/tree/6-roles
 
